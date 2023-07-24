@@ -12,6 +12,10 @@ Result of the live coding during my talk at WeAreDevelopers World Congress 2023 
 
 ## Setup
 
+- Clone this project
+  ```bash
+  git clone https://github.com/IObert/From-Zero-to-Hero-NextJS-13-and-Tailwind-CSS.git
+  ```
 - Copy `sample.env` to `.env` and replace the listed environment variables
 - Install dependencies and run the project
 
@@ -19,5 +23,17 @@ Result of the live coding during my talk at WeAreDevelopers World Congress 2023 
   npm install
   npm run dev
   ```
-
 - Access <localhost:3000> and start interacting with the site
+
+
+
+## The Road From Here
+
+These links might help you to continue your learning journey:
+
+- [Next, Nest, Nuxt, Nust?](https://www.twilio.com/blog/comparing-nextjs-nestjs-nuxt-gatsby) + [Talk on YouTube](https://www.youtube.com/watch?v=OijkHxmbLMc&t=2s)
+- [Getting Started With Next](https://nextjs.org/docs)
+- [App Router Documentation](https://nextjs.org/docs/app/building-your-application/routing#the-app-router)
+- [When to use Server and Client Components?](https://nextjs.org/docs/getting-started/react-essentials#when-to-use-server-and-client-components)
+- [Custom Route Handlers](https://nextjs.org/blog/next-13-2#custom-route-handlers)
+- [Fun With Next 13 Server Components](https://dev.to/zenstack/fun-with-nextjs-13-server-components-o37)
