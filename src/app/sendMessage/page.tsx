@@ -1,5 +1,5 @@
 import twilio from "twilio";
-import { redirect } from "next/navigation";
+import { SubmitButton } from "./submit-button";
 
 const client = twilio(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN);
 
@@ -16,8 +16,12 @@ export default function Home() {
       contentSid: data.get("message") ? undefined : process.env.CONTENT_SID,
     });
 
+    function sleep(ms: number) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+
     console.log(`Sent message ${recipe.sid}`);
-    redirect("/");
+    await sleep(5000);
   }
   return (
     <div className="flex flex-col items-center justify-center h-screen text-sm text-white font-medium ">
@@ -47,16 +51,7 @@ export default function Home() {
             className="rounded-lg w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
             placeholder="Write your message here..."
           ></textarea>
-          <button
-            type="submit"
-            className="w-full inline-flex items-center justify-center py-2.5 rounded-lg  dark:bg-blue-600 dark:hover:bg-blue-700 "
-          >
-            <img
-              className="invert pr-4"
-              src="https://img.icons8.com/?id=93330"
-            ></img>
-            Send Message
-          </button>
+          <SubmitButton />
         </form>
       </div>
     </div>
