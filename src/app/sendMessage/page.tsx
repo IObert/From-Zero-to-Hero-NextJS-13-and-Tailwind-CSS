@@ -11,7 +11,8 @@ export default function Home() {
 
     const recipe = await client.messages.create({
       to: `whatsapp:${data.get("phone")}`,
-      from: process.env.TWILIO_SENDER,
+      from: `whatsapp:${process.env.NEXT_PUBLIC_TWILIO_NUMBER}`,
+      messagingServiceSid: process.env.TWILIO_SENDER,
       body: data.get("message"),
       contentSid: data.get("message") ? undefined : process.env.CONTENT_SID,
     });

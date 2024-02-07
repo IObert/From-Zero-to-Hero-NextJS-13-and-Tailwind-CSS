@@ -21,7 +21,7 @@ export default function Home() {
       <Link
         className="animate-bounce absolute bottom-10 right-10"
         target="_blank"
-        href="https://wa.me/4915735986800?text=I'm at WWC in Berlin!"
+        href={`https://wa.me/${process.env.NEXT_PUBLIC_TWILIO_NUMBER}?text=Send this message!`}
       >
         <button className="flex items-center justify-center rounded-full bg-[#F22F46] h-[80px] w-[80px]">
           <img
