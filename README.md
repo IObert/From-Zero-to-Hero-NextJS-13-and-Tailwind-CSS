@@ -1,6 +1,6 @@
 # From Zero to Hero: NextJS 13 and Tailwind CSS for Beginners
 
-Result of the live coding during my talk at WeAreDevelopers World Congress 2023 in Berlin
+Result of the live coding during my talk about NextJS 2023/2024
 
 ## Prerequisites
 
@@ -35,5 +35,7 @@ These links might help you to continue your learning journey:
 - [Getting Started With Next](https://nextjs.org/docs)
 - [App Router Documentation](https://nextjs.org/docs/app/building-your-application/routing#the-app-router)
 - [When to use Server and Client Components?](https://nextjs.org/docs/getting-started/react-essentials#when-to-use-server-and-client-components)
+- [Public and Private Environment Variables](https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables)
 - [Custom Route Handlers](https://nextjs.org/blog/next-13-2#custom-route-handlers)
+- [Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
 - [Fun With Next 13 Server Components](https://dev.to/zenstack/fun-with-nextjs-13-server-components-o37)
