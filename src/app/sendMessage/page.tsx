@@ -3,18 +3,17 @@ import { SubmitButton } from "./submit-button";
 
 const client = twilio(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN);
 
-export default function Home() {
-  console.log("Access to second page");
+export default function SendMessagePage() {
+  console.log("Send message page rendered");
 
   async function send(data: any) {
     "use server";
+    console.log("Incoming request to send message");
 
     const recipe = await client.messages.create({
       to: `whatsapp:${data.get("phone")}`,
       from: `whatsapp:${process.env.NEXT_PUBLIC_TWILIO_NUMBER}`,
-      messagingServiceSid: process.env.TWILIO_SENDER,
       body: data.get("message"),
-      contentSid: data.get("message") ? undefined : process.env.CONTENT_SID,
     });
 
     function sleep(ms: number) {
@@ -52,7 +51,7 @@ export default function Home() {
             className="rounded-lg w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
             placeholder="Write your message here..."
           ></textarea>
-          <SubmitButton />
+          <SubmitButton></SubmitButton>
         </form>
       </div>
     </div>
