@@ -23,9 +23,8 @@ Result of the live coding during my talk about NextJS 2023/2024
   npm install
   npm run dev
   ```
+
 - Access <localhost:3000> and start interacting with the site
-
-
 
 ## The Road From Here
 
